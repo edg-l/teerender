@@ -2,6 +2,13 @@
 name = "teerender"
 version = "0.1.0-alpha.0"
 edition = "2021"
+authors = ["Edgar <git@edgarluque.com>"]
+description = "A blazingly fast tee skin renderer web service, with custom colors."
+readme = "README.md"
+documentation = "https://docs.rs/teerender"
+repository = "https://github.com/edg-l/teerender"
+license = "MIT"
+keywords = ["ddnet", "teeworlds", "tee", "skin"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
