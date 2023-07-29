@@ -1,3 +1,3 @@
 # Teerender
 
-A blazingly fast tee skin renderer, with custom colors. As a web endpoint
+A blazingly fast tee skin renderer web service, with custom colors.
