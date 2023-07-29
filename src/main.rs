@@ -20,7 +20,12 @@ async fn run() -> anyhow::Result<()> {
 
     let app = Router::new().route("/:skin", get(render));
 
-    let addr = SocketAddr::from(([127, 0, 0, 1], 3000));
+    let addr = SocketAddr::from((
+        [127, 0, 0, 1],
+        std::env::var("TEERENDER_LISTEN_PORT")
+            .map(|x| x.parse().unwrap())
+            .unwrap_or(3000),
+    ));
     tracing::debug!("listening on {}", addr);
     axum::Server::bind(&addr)
         .serve(app.into_make_service())
