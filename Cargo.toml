@@ -13,10 +13,10 @@ keywords = ["ddnet", "teeworlds", "tee", "skin"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-anyhow = { version = "1.0.72", features = ["backtrace"] }
+anyhow = { version = "1.0.75", features = ["backtrace"] }
 axum = { version = "0.6.19", features = ["multipart", "tracing"] }
 image = { version = "0.24.6", features = ["png"] }
-serde = { version = "1.0.178", features = ["derive"] }
-tokio = { version = "1.29.1", features = ["full"] }
+serde = { version = "1.0.188", features = ["derive"] }
+tokio = { version = "1.32.0", features = ["full"] }
 tracing = "0.1.37"
 tracing-subscriber = { version = "0.3.17", features = ["env-filter"] }
